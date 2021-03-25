@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="numberPickerStyle"/>
+    <attr format="reference" name="timePickerStyle"/>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_C8C8C8">#C8C8C8</color>
+    <item name="gridview" type="id"/>
+    <item name="hyfi_search_item_addBtn_test" type="id"/>
+    <item name="hyfi_search_item_name_test" type="id"/>
+    <item name="login_admin_content_layout" type="id"/>
+    <item name="np__decrement" type="id"/>
+    <item name="np__increment" type="id"/>
+    <item name="position" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="selected_view" type="id"/>
+    <item name="webview" type="id"/>
+    <string name="app_name">react-native-tp-app-timepicker</string>
+    <string name="time_format_day">%d天</string>
+    <string name="time_format_hour">%d小时</string>
+    <string name="time_format_min">%d分</string>
+    <string name="time_format_sec">%d秒</string>
+    <string name="time_picker_decrement_hour_button">减少小时数</string>
+    <string name="time_picker_decrement_minute_button">减小分钟数</string>
+    <string name="time_picker_decrement_set_am_button">设置上午</string>
+    <string name="time_picker_increment_hour_button">增加小时数</string>
+    <string name="time_picker_increment_minute_button">增加分钟数</string>
+    <string name="time_picker_increment_set_pm_button">设置下午</string>
+    <string name="time_picker_separator">:</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="NPWidget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+    <style name="NPWidget.Holo.NumberPicker" parent="NPWidget.NumberPicker">
+        <item name="solidColor">@android:color/transparent</item>
+        <item name="selectionDivider">@color/color_000000</item>
+        <item name="selectionDividerHeight">2dip</item>
+        <item name="internalLayout">@layout/number_picker_with_selector_wheel</item>
+        <item name="internalMinWidth">64dip</item>
+        <item name="internalMaxHeight">180dip</item>
+        <item name="virtualButtonPressedDrawable">@drawable/item_background_holo_dark</item>
+    </style>
+    <style name="NPWidget.NumberPicker">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">50dip</item>
+    </style>
+    <declare-styleable name="LinearProgressBar">
+        <attr format="color" name="patternColor"/>
+        <attr format="dimension" name="patternHeight"/>
+        <attr format="dimension" name="patternOffset"/>
+        <attr format="dimension" name="patternSpace"/>
+        <attr format="dimension" name="linearTextSize"/>
+        <attr format="color" name="linearTextColor"/>
+        <attr format="boolean" name="linearShowProgress"/>
+        <attr format="boolean" name="linearIsTextDisplay"/>
+        <attr format="dimension" name="linearTextMarginTop"/>
+    </declare-styleable>
+    <declare-styleable name="NumberPicker">
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr format="color|reference" name="solidColor"/>
+        <!-- @hide The divider for making the selection area. -->
+        <attr format="reference" name="selectionDivider"/>
+        <!-- @hide The height of the selection divider. -->
+        <attr format="dimension" name="selectionDividerHeight"/>
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr format="dimension" name="selectionDividersDistance"/>
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr format="dimension" name="internalMinHeight"/>
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr format="dimension" name="internalMaxHeight"/>
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr format="dimension" name="internalMinWidth"/>
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr format="dimension" name="internalMaxWidth"/>
+        <!-- @hide The layout of the number picker. -->
+        <attr format="reference" name="internalLayout"/>
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr format="reference" name="virtualButtonPressedDrawable"/>
+    </declare-styleable>
+    <declare-styleable name="PasswordEdittext">
+        <attr format="reference|string" name="passwordHint"/>
+        <attr format="reference|integer" name="maxLength"/>
+        <attr format="reference|integer" name="maxLengthCustom"/>
+        <attr format="boolean" name="wirelessPasswd"/>
+    </declare-styleable>
+    <declare-styleable name="ProgressButton">
+        <attr format="color" name="activeColor"/>
+        <attr format="integer" name="progress"/>
+        <attr format="dimension" name="radiusX"/>
+        <attr format="dimension" name="radiusY"/>
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr format="integer" name="startAngle"/>
+        <attr format="dimension" name="progressRadius"/>
+        <attr format="dimension" name="ringWidth"/>
+        <attr format="color" name="centerColor"/>
+        <attr format="color" name="ringColor"/>
+        <attr format="color" name="progressColor"/>
+        <attr format="dimension" name="textSize"/>
+        <attr format="color" name="textColor"/>
+        <attr format="boolean" name="showProgress"/>
+        <attr format="boolean" name="isTextDisplay"/>
+    </declare-styleable>
+    <declare-styleable name="WeekDayPicker">
+        <attr format="color" name="unselectedBackgroundColor"/>
+        <attr format="color" name="unselectedTextColor"/>
+        <attr format="color" name="selectedBackgroundColor"/>
+        <attr format="color" name="selectedTextColor"/>
+    </declare-styleable>
+    <declare-styleable name="WheelPicker">
+        <attr format="reference" name="wheel_data"/>
+        <attr format="integer" name="wheel_selected_item_position"/>
+        <attr format="dimension" name="wheel_item_text_size"/>
+        <attr format="color" name="wheel_item_text_color"/>
+        <attr format="color" name="wheel_selected_item_text_color"/>
+        <attr format="boolean" name="wheel_same_width"/>
+        <attr format="string" name="wheel_maximum_width_text"/>
+        <attr format="integer" name="wheel_maximum_width_text_position"/>
+        <attr format="integer" name="wheel_visible_item_count"/>
+        <attr format="dimension" name="wheel_item_space"/>
+        <attr format="boolean" name="wheel_cyclic"/>
+        <attr format="boolean" name="wheel_indicator"/>
+        <attr format="color" name="wheel_indicator_color"/>
+        <attr format="dimension" name="wheel_indicator_size"/>
+        <attr format="boolean" name="wheel_curtain"/>
+        <attr format="color" name="wheel_curtain_color"/>
+        <attr format="boolean" name="wheel_atmospheric"/>
+        <attr format="boolean" name="wheel_curved"/>
+        <attr format="enum" name="wheel_item_align">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

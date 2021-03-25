@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The TimePicker style. -->
+    <attr name="timePickerStyle" format="reference" />
+
+    <declare-styleable name="PasswordEdittext">
+        <attr name="passwordHint" format="reference|string" />
+        <attr name="maxLength" format="reference|integer" />
+        <attr name="maxLengthCustom" format="reference|integer" />
+        <attr name="wirelessPasswd" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressButton">
+        <attr name="activeColor" format="color"/>
+        <attr name="progress" format="integer"/>
+        <attr name="radiusX" format="dimension"/>
+        <attr name="radiusY" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="startAngle" format="integer"/>
+        <attr name="progressRadius" format="dimension"/>
+        <attr name="ringWidth" format="dimension"/>
+        <attr name="centerColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="showProgress" format="boolean"/>
+        <attr name="isTextDisplay" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LinearProgressBar">
+        <attr name="patternColor" format="color"/>
+        <attr name="patternHeight" format="dimension"/>
+        <attr name="patternOffset" format="dimension"/>
+        <attr name="patternSpace" format="dimension"/>
+        <attr name="linearTextSize" format="dimension"/>
+        <attr name="linearTextColor" format="color"/>
+        <attr name="linearShowProgress" format="boolean"/>
+        <attr name="linearIsTextDisplay" format="boolean"/>
+        <attr name="linearTextMarginTop" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="WeekDayPicker">
+        <attr name="unselectedBackgroundColor" format="color"/>
+        <attr name="unselectedTextColor" format="color"/>
+        <attr name="selectedBackgroundColor" format="color"/>
+        <attr name="selectedTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+</resources>

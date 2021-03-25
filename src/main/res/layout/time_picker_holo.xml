@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout of time picker -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    tools:ignore="ResourceName">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" >
+
+        <!-- divider -->
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/color_000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <!-- android:layoutDirection="ltr" -->
+
+            <!-- hour -->
+
+            <com.tplink.react_native_tp_app_timepicker.view.NumberPicker
+                android:id="@+id/hour"
+                style="@style/NPWidget.Holo.NumberPicker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dip"
+                android:layout_marginTop="16dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:selectionDividerHeight="0.5dp" />
+
+            <!-- minute -->
+
+            <com.tplink.react_native_tp_app_timepicker.view.NumberPicker
+                android:id="@+id/minute"
+                style="@style/NPWidget.Holo.NumberPicker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dip"
+                android:layout_marginTop="16dip"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:selectionDividerHeight="0.5dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- AM / PM -->
+
+    <com.tplink.react_native_tp_app_timepicker.view.NumberPicker
+        android:id="@+id/amPm"
+        style="@style/NPWidget.Holo.NumberPicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dip"
+        android:layout_marginTop="16dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:selectionDividerHeight="0.5dp" />
+
+</LinearLayout>
